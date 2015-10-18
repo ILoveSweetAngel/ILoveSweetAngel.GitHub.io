@@ -63,8 +63,22 @@ body {
 
 .main .letter{
   margin-top: 80px;
-  font-size: 20px;
+  font-size: 22px;
 }
+
+.main .letter a {
+  color: blueviolet;
+}
+
+/* TODO: Just for notes */
+.notes {
+  margin-top: 25px;
+}
+.notes a {
+  color: blueviolet;
+  font-size: 25px;
+}
+
 /* TODO: Just for footer */
 .footer {
   padding: 50px;
