@@ -29,6 +29,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>I Love Sweet Angel</title>
+    <meta name="description" content="Điền Thị Ngọc Linh - Sweet Angel in my heart - From Ông Trùm with love"  >
+    <meta name="keywords" content="I Love Sweet Angel, Sweet Angel, Ngọc Linh, Điền Thị Ngọc Linh,  Điền Ngọc Linh, Mikan Sakura, Ông Trùm, I fall in love">
     <link rel="icon" type="image/jpg" href="lib/images/SweetAngel.jpg">
     <meta name="author" content="Nguyen Trung Tin">
     <link rel="canonical" href="http://ilovesweetangel.github.io/">
@@ -76,7 +78,7 @@
 
     <div class="main">
       <div class="container">
-        <h2 class="wow zoomIn" data-wow-duration="2s" data-wow-delay="11s"><a href="html/sweetangel.html" target="_blank">Her...</a></h2>
+        <h2 class="wow zoomIn" data-wow-duration="2s" data-wow-delay="11s"><a href="html/sweetangel.html" target="_blank">Sweet Angel...</a></h2>
 
           <table class="wow zoomIn" data-wow-duration="2s" data-wow-delay="13s">
             <tr class="wow zoomInDown" data-wow-duration="2s" data-wow-delay="15s">
@@ -367,11 +369,11 @@
             </tr>
           </table>
           <div class="letter">
-            <a class="loveletter" href="html/loveletter.html" target="_blank"><i class="fa fa-heart wow pulse" data-wow-duration="0.5s" data-wow-iteration="1000000"></i> Love Letter <i class="fa fa-heart wow pulse" data-wow-duration="0.5s" data-wow-iteration="1000000"></i></a>
+            <a class="loveletter" href="html/loveletter.html" target="_blank">---<i class="fa fa-heartbeat wow pulse" data-wow-duration="0.5s" data-wow-iteration="1000000"></i> Love Letter <i class="fa fa-heartbeat wow pulse" data-wow-duration="0.5s" data-wow-iteration="1000000"></i>---</a>
           </div>
 
           <div class="notes">
-            <a href="html/notes.html" target="_blank"> /* Notes... */</a>
+            <a href="html/notes.html" target="_blank"> /* --- <i></i> Notes for Sweet Angel <i></i> --- */</a>
           </div>
 
       </div>
@@ -406,15 +408,18 @@
               $(this).find("i").toggleClass("fa fa-heart red");
             });
         });
+        $(".notes a").hover(function() {
+          $(this).find("i").toggleClass("fa fa-heartbeat red");
+        });
       });
     </script>
 
     <script type="text/javascript">
-    if (screen.width <= 640) {
+    if ($(window).width() <= 640) {
         $(document).ready(function() {
-          $(".main h2").data("data-wow-delay", 0s);
-          $(".main table").data("data-wow-delay", 2s);
-          $(".main table tr").data("data-wow-delay", 4s);
+          $(".main h2").attr("data-wow-delay", "0s");
+          $(".main table").attr("data-wow-delay", "2s");
+          $(".main table tr").attr("data-wow-delay", "4s");
         });
       };
     </script>
