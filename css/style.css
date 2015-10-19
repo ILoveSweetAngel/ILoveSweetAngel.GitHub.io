@@ -1,6 +1,12 @@
 body {
   font-family: 'Dancing Script', cursive;
   text-align: center;
+  outline-style: none;
+}
+
+a:focus {
+  outline-style: none;
+  outline: 0;
 }
 
 @font-face {
