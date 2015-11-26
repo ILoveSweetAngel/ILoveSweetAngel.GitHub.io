@@ -55,11 +55,11 @@
     		font-family: RoundhandScript;
     		src: url(../font/RoundhandScriptBold.ttf);
     	}
-		
+
 		body {
 			padding: auto auto;
 		}
-		
+
 		img {
 			margin: 150px auto 0px;
 		}
@@ -71,7 +71,7 @@
         margin: 50px auto 0px auto;
         color: blueviolet;
       }
-	  
+
 	  h4 {
 		font-family: 'RoundhandScript', cursive;
         text-align: center;
@@ -79,7 +79,7 @@
         margin: 30px auto;
         color: blueviolet;
 	  }
-	 
+
 	 button {
 		text-align: center;
 		padding: 15px;
@@ -88,7 +88,7 @@
 		background-color: purple;
 		border: solid 3px blueviolet;
 	 }
-	 
+
 	 button:hover {
 		background-color: blueviolet;
 		border-color: purple;
@@ -97,7 +97,7 @@
 
   </head>
   <body>
-	
+
 	<div class="container">
 		<img class="img-responsive" src="../lib/images/sweetlove.png" />
         <h1>Oops! Oh noooo! >!< </h1>
@@ -113,29 +113,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-	<script>
-		$(document).ready(function(){
-			$("button").click(function passWord(){
-				var testV = 1;
-				var pass1 = prompt('Please Enter Your Password',' ');
-				while (testV < 100) {
-				if (!pass1) 
-				history.go(-1);
-				if (pass1.toLowerCase() == "thienthanngotngao31051994") {
-				alert('Password Correct! Click OK to read notes!');
-				window.location="http://ngoclinh.ilovesweetangel.com/html/privatesweetlove.html";
-				break;
-				} 
-				testV+=1;
-				var pass1 = 
-				prompt('Access Denied - Password Incorrect, Please Try Again.','password');
-				}
-				if (pass1.toLowerCase()!="password" & testV ==100) 
-				history.go(-1);
-				return " ";
-			});
-		});
-	</script>
-	
+	  <script type="text/javascript" src="../js/private.js"></script>
+
   </body>
 </html>
